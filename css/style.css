@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF0000;
+    --primary: #FF0000; !important
     --secondary: #555555;
     --light: #F1F3FA;
     --dark: #1C2035;
@@ -10,7 +10,7 @@
     position: fixed;
     display: none;
     right: 30px;
-    bottom: 40px;
+    bottom: 60px;
     z-index: 99;
 }
 
