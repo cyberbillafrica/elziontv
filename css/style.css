@@ -9,7 +9,7 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 30px;
+    left: 30px;
     bottom: 60px;
     z-index: 99;
 }
@@ -42,7 +42,7 @@
 
 .btn-primary,
 .btn-outline-primary:hover {
-    color: var(--light);
+    color: var(--primary);
 }
 
 .btn-secondary,
@@ -83,7 +83,7 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 35px;
+    margin-right: 20px;
     padding: 25px 0;
     color: var(--dark);
     font-size: 18px;
