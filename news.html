@@ -1,62 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sliding News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Slider</title>
     <style>
-        /* Add your CSS styles here */
+        /* Basic styling for the news container */
         .news-container {
-            width: 100%;
+            width: 400px;
             overflow: hidden;
         }
+
+        /* Styling for individual news items */
         .news-item {
             display: none;
-            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
         }
-        img {
+
+        /* Styling for the headline text */
+        .headline {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Styling for the image */
+        .news-image {
             max-width: 100%;
             height: auto;
+        }
+
+        /* Styling for the "Read More" button */
+        .read-more-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="news-container">
         <div class="news-item">
-            <img src="image1.jpg" alt="News 1">
-            <h2>Headline 1</h2>
-            <p>News summary here.</p>
-            <a href="readmore1.html">Read More</a>
+            <h2 class="headline">Headline 1</h2>
+            <img class="news-image" src="image1.jpg" alt="News Image 1">
+            <p>News description goes here.</p>
+            <button class="read-more-button">Read More</button>
         </div>
         <div class="news-item">
-            <img src="image2.jpg" alt="News 2">
-            <h2>Headline 2</h2>
-            <p>News summary here.</p>
-            <a href="readmore2.html">Read More</a>
+            <h2 class="headline">Headline 2</h2>
+            <img class="news-image" src="image2.jpg" alt="News Image 2">
+            <p>News description goes here.</p>
+            <button class="read-more-button">Read More</button>
         </div>
-        <!-- Add more news items here -->
+        <div class="news-item">
+            <h2 class="headline">Headline 3</h2>
+            <img class="news-image" src="image3.jpg" alt="News Image 3">
+            <p>News description goes here.</p>
+            <button class="read-more-button">Read More</button>
+        </div>
+        <div class="news-item">
+            <h2 class="headline">Headline 4</h2>
+            <img class="news-image" src="image4.jpg" alt="News Image 4">
+            <p>News description goes here.</p>
+            <button class="read-more-button">Read More</button>
+        </div>
     </div>
-    
+
     <script>
-        // JavaScript code for sliding the news items
+        // JavaScript for creating a simple news slider
+        let currentSlide = 0;
         const newsItems = document.querySelectorAll('.news-item');
-        let currentIndex = 0;
 
-        function showNewsItem(index) {
-            newsItems.forEach((item, i) => {
-                item.style.display = i === index ? 'block' : 'none';
-            });
+        function showSlide(slideIndex) {
+            if (slideIndex < 0) {
+                slideIndex = newsItems.length - 1;
+            }
+            if (slideIndex >= newsItems.length) {
+                slideIndex = 0;
+            }
+
+            for (let i = 0; i < newsItems.length; i++) {
+                newsItems[i].style.display = 'none';
+            }
+
+            newsItems[slideIndex].style.display = 'block';
+            currentSlide = slideIndex;
         }
 
-        function nextNewsItem() {
-            currentIndex = (currentIndex + 1) % newsItems.length;
-            showNewsItem(currentIndex);
+        function nextSlide() {
+            showSlide(currentSlide + 1);
         }
 
-        // Auto-advance the news every 5 seconds
-        setInterval(nextNewsItem, 5000);
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
 
         // Initial display
-        showNewsItem(currentIndex);
+        showSlide(currentSlide);
+
+        // Automatic slide change (you can set an interval for this)
+        setInterval(nextSlide, 5000);
     </script>
 </body>
 </html>
