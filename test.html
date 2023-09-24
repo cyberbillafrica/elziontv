@@ -124,7 +124,22 @@ s0.parentNode.insertBefore(s1,s0);
   font-size: 30px; /* Adjust the font size as needed */
   color: red; /* Text color */
 }
-	
+
+        /* Add your CSS styles here */
+        .news-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .news-item {
+            display: none;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+	}
+    
+    	
 </style>
 	
 <body>
@@ -304,6 +319,22 @@ s0.parentNode.insertBefore(s1,s0);
 <!-- About Us End -->
 
 
+<div class="news-container">
+        <div class="news-item">
+            <img src="elziona.jpg" alt="News 1">
+            <h2>Headline 1</h2>
+            <p>News summary here.</p>
+            <a href="readmore1.html">Read More</a>
+        </div>
+        <div class="news-item">
+            <img src="elzionb.jpg" alt="News 2">
+            <h2>Headline 2</h2>
+            <p>News summary here.</p>
+            <a href="readmore2.html">Read More</a>
+        </div>
+        <!-- Add more news items here -->
+</div>
+	      
  <!-- Footer Start -->
     <div class="container-fluid bg-danger footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -383,6 +414,30 @@ s0.parentNode.insertBefore(s1,s0);
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        // JavaScript code for sliding the news items
+        const newsItems = document.querySelectorAll('.news-item');
+        let currentIndex = 0;
+
+        function showNewsItem(index) {
+            newsItems.forEach((item, i) => {
+                item.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextNewsItem() {
+            currentIndex = (currentIndex + 1) % newsItems.length;
+            showNewsItem(currentIndex);
+        }
+
+        // Auto-advance the news every 5 seconds
+        setInterval(nextNewsItem, 5000);
+
+        // Initial display
+        showNewsItem(currentIndex);
+    </script>  
+      
 </body>
 
 </html>
