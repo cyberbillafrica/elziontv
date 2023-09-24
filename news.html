@@ -1,4 +1,26 @@
-<div class="news-container">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding News</title>
+    <style>
+        /* Add your CSS styles here */
+        .news-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .news-item {
+            display: none;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-container">
         <div class="news-item">
             <img src="image1.jpg" alt="News 1">
             <h2>Headline 1</h2>
@@ -13,3 +35,28 @@
         </div>
         <!-- Add more news items here -->
     </div>
+    
+    <script>
+        // JavaScript code for sliding the news items
+        const newsItems = document.querySelectorAll('.news-item');
+        let currentIndex = 0;
+
+        function showNewsItem(index) {
+            newsItems.forEach((item, i) => {
+                item.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextNewsItem() {
+            currentIndex = (currentIndex + 1) % newsItems.length;
+            showNewsItem(currentIndex);
+        }
+
+        // Auto-advance the news every 5 seconds
+        setInterval(nextNewsItem, 5000);
+
+        // Initial display
+        showNewsItem(currentIndex);
+    </script>
+</body>
+</html>
