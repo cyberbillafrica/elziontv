@@ -131,6 +131,44 @@ s0.parentNode.insertBefore(s1,s0);
     color: red;
 }
 
+
+/* Basic styling for the news container */
+        .news-container {
+            width: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Styling for individual news items */
+        .news-item {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        /* Styling for the headline text */
+        .headline {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Styling for the image */
+        .news-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling for the "Read More" button */
+        .read-more-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
 </style>
 	
 <body>
@@ -396,6 +434,34 @@ s0.parentNode.insertBefore(s1,s0);
 <!-- Page Video End -->
 
 
+     <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+     <h2 class="fs-10 fw-medium text-primary">News Headline</h2>    
+    <div class="news-container">
+        <div class="news-item">
+            <h2 class="headline">Tech Engagement</h2>
+            <img class="news-image" src="img/elzion1.jpg" alt="News Image 1">
+            <p>CyberBill Africa team engages Nigeria House of Representatives Member</p>
+            <button class="read-more-button">Read More</button>
+        </div>
+        <div class="news-item">
+            <h2 class="headline">Politics</h2>
+            <img class="news-image" src="img/elzionb.jpg" alt="News Image 2">
+            <p>UN General Assembly meeting ends.</p>
+            <button class="read-more-button">Read More</button>
+        </div>
+        <div class="news-item">
+            <h2 class="headline">Education</h2>
+            <img class="news-image" src="img/elziona.jpg" alt="News Image 3">
+            <p>ASUU not aware Lecturers Salaries was Increased.</p>
+            <button class="read-more-button">Read More</button>
+        </div>
+        <div class="news-item">
+            <h2 class="headline">Sports</h2>
+            <img class="news-image" src="img/LPpassport.png" alt="News Image 4">
+            <p>Hon Chima Holds U-15 youth Championship</p>
+            <button class="read-more-button">Read More</button>
+        </div>
+    </div>
 	
     <!-- Programs Start -->
     <div class="container-xxl pt-5">
@@ -831,6 +897,43 @@ s0.parentNode.insertBefore(s1,s0);
 
 
     <!-- JavaScript Libraries -->
+
+ <script>
+        // JavaScript for creating a simple news slider
+        let currentSlide = 0;
+        const newsItems = document.querySelectorAll('.news-item');
+
+        function showSlide(slideIndex) {
+            if (slideIndex < 0) {
+                slideIndex = newsItems.length - 1;
+            }
+            if (slideIndex >= newsItems.length) {
+                slideIndex = 0;
+            }
+
+            for (let i = 0; i < newsItems.length; i++) {
+                newsItems[i].style.display = 'none';
+            }
+
+            newsItems[slideIndex].style.display = 'block';
+            currentSlide = slideIndex;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Initial display
+        showSlide(currentSlide);
+
+        // Automatic slide change (you can set an interval for this)
+        setInterval(nextSlide, 5000);
+    </script>
+	    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
