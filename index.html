@@ -130,9 +130,15 @@ s0.parentNode.insertBefore(s1,s0);
 
 /* Basic styling for the news container */
         .news-container {
-	    overflow: hidden;
+	    /* overflow: hidden;
             margin: 0 auto;
-            max-width: 800px;
+            max-width: 800px; */
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 98%;
+   height: 100%;
         }
 
         /* Styling for individual news items */
@@ -486,7 +492,7 @@ main {
 	<div class="container-xxl py-5">
         <div class="container">
             <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; background: url(img/tvsound.jpg) center center no-repeat; background-size: cover;">
-                <h2 class="fs-5 fw-medium" id="custom-heading1">Our Programs</h2>
+                <h2 class="fs-5 fw-medium" id="custom-heading">Our Programs</h2>
                 <h4 class="display-5 mb-5" id="custom-heading1">Programs suitable for everyone</h4>
 	    </div>
             <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
