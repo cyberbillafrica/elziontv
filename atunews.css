@@ -3936,7 +3936,7 @@ input[type="button"].btn-block {
   }
 }
 
-.nav {
+/*.nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -4377,7 +4377,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: #fff;
+  color: #fff;*/
 }
 
 .card {
