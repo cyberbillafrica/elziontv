@@ -9283,7 +9283,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #FFCC00 !important;
+  color: red !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
