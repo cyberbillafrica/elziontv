@@ -170,7 +170,7 @@ sup {
   top: -.5em;
 }
 
-a {
+/*a {
   color: #FFCC00;
   text-decoration: none;
   background-color: transparent;
@@ -329,7 +329,7 @@ legend {
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
-  white-space: normal;
+  white-space: normal;*/
 }
 
 @media (max-width: 1200px) {
