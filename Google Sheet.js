@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwTqvpIDya8cbE25i4UdXgcGN7XrJq8IirYSmboraqbMF7qipUNIiIp-N395H906k0W/exec'
+const scriptURL = 'https://sheetdb.io/api/v1/vgbvme3cgb2jt'
 
 const form = document.forms['contact-form']
 
