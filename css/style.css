@@ -100,7 +100,7 @@ blockquote.pull-right {
 }
 /*** Navbar ***/
 .sticky-top {
-    top: -100px;
+    top: -20px;
     transition: .5s;
 }
 
