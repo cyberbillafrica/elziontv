@@ -108,7 +108,7 @@
 
 .navbar .navbar-nav .nav-link {
     padding: 8px;
-    color: var(--bs-red);
+    color: var(--bs-white);
     font-size: 15px;
     outline: none;
     
@@ -116,7 +116,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-success) !important;
+    color: var(--bs-red) !important;
 }
 
 .navbar .dropdown-toggle::after {
