@@ -99,7 +99,7 @@ blockquote.pull-right {
   border-right: 5px solid #ef5285;
 }
 /*** Navbar ***/
-.sticky-top {
+/*.sticky-top {
     top: -20px;
     transition: .5s;
 }
