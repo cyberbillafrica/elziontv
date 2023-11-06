@@ -479,7 +479,7 @@
 
 /*** Team Start ***/
 
-.team-item {
+/*.team-item {
     border-top: 30px solid var(--bs-danger) !important;
     background: rgba(239, 239, 241, 0.8);
 }
@@ -574,7 +574,7 @@
 
 /*** Testimonial Start ***/
 
-.testimonial-item {
+/*.testimonial-item {
     background: #e3f0eb;
 
 }
