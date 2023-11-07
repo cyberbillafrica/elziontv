@@ -345,7 +345,10 @@
     border-radius: 10px 10px 10px 10px;
 }
 
+
 .services-item:hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo.jpg) center center no-repeat;
+    background-size: cover;
     height: 100%;
     opacity: 1;
     transition: .5s;
