@@ -214,14 +214,12 @@ s0.parentNode.insertBefore(s1,s0);
        </div>
     </div>
    
-
-<!-- Features Start -->
-    <!-- Core Values -->
+    <!-- Core Values start-->
    <!--<div class="container">-->
-	   <div class="video-container">
      <img class="img-fluid mb-1" src="img/corevalues.jpg" alt="">
           <img class="img-fluid mb-1" src="img/core1.jpg" alt="">
-              </div>
+              <img class="img-fluid" src="img/core2.jpg" alt="Icon">
+               </div>
 
 	
 	 <div class="container-xxl py-1">
@@ -937,8 +935,9 @@ windows.open('new.html', '_blank');
 });
 </script>
 
-	<script>
-  // Function to hide the loading spinner container when the page is fully loaded
+	
+<script>
+  // Function to hide the loading spinner container immediately when the page is fully loaded
   function hideLoadingSpinner() {
     var loadingSpinner = document.getElementById('loading-spinner');
     if (loadingSpinner) {
@@ -946,10 +945,12 @@ windows.open('new.html', '_blank');
     }
   }
 
-  // Event listener to trigger the function when the page is fully loaded
+  // Attach the event listener to the "load" event
   window.addEventListener('load', hideLoadingSpinner);
-</script>
 
+  // Hide the loading spinner after a certain time (e.g., 5 seconds) even if the page hasn't fully loaded
+  setTimeout(hideLoadingSpinner, 5000); // Adjust the time in milliseconds as needed
+</script>
 
 	    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
