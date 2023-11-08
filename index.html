@@ -60,7 +60,7 @@ s0.parentNode.insertBefore(s1,s0);
 <body>
 
 <div class="loading-spinner">
-  <img src="img/newlogo.jpg" alt="Loading..." />
+  <img id="loading-image" src="img/newlogo.jpg" alt="Loading..." />
 </div>
 
     <!-- Spinner Start
@@ -975,6 +975,20 @@ windows.open('new.html', '_blank');
 
 });
 </script>
+
+	<script>
+  // Function to hide the loading image when the page is fully loaded
+  function hideLoadingImage() {
+    var loadingImage = document.getElementById('loading-image');
+    if (loadingImage) {
+      loadingImage.style.display = 'none';
+    }
+  }
+
+  // Event listener to trigger the function when the page is fully loaded
+  window.addEventListener('load', hideLoadingImage);
+</script>
+
 	    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
