@@ -59,11 +59,11 @@ s0.parentNode.insertBefore(s1,s0);
 </head>
 <body>
 
-<div id="loading-spinner" class="loading-spinner">
+<!--<div id="loading-spinner" class="loading-spinner">
   <img id="loading-image" src="img/newlogo1.jpg" alt="Loading..." />
-</div>
+</div>-->
 
-    <!-- Spinner Start
+    <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
@@ -150,7 +150,7 @@ s0.parentNode.insertBefore(s1,s0);
    </marquee>
 </div>
     
-    <div class="container-fluid px-0 mb-3">
+    <div class="container-fluid px-0 mb-2">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -220,7 +220,11 @@ s0.parentNode.insertBefore(s1,s0);
      <img class="img-fluid mb-1" src="img/corevalues.jpg" alt="icon">
       </div>
 	
-   <div class=" wow fadeInUp" data-wow-delay="0.1s">
+     <div class=" wow fadeInUp" data-wow-delay="0.1s">
+        <img class="img-fluid" src="img/coreintro.jpg" alt="icon" style="margin-bottom: 5px;">
+      </div>
+	
+    <div class=" wow fadeInUp" data-wow-delay="0.1s">
         <img class="img-fluid" src="img/core1.jpg" alt="icon" style="margin-bottom: 5px;">
    </div>
 	
@@ -931,8 +935,8 @@ s0.parentNode.insertBefore(s1,s0);
                     <p>Sign up to get Global updates from us</p>
                     <div class="position-relative w-100">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2" style="color: white; background-color: #FF0000;">SignUp</button>
+		    </div>
                 </div>
             </div>
         </div>
@@ -989,23 +993,6 @@ windows.open('new.html', '_blank');
 });
 
 });
-</script>
-
-	
-<script>
-  // Function to hide the loading spinner container immediately when the page is fully loaded
-  function hideLoadingSpinner() {
-    var loadingSpinner = document.getElementById('loading-spinner');
-    if (loadingSpinner) {
-      loadingSpinner.style.display = 'none';
-    }
-  }
-
-  // Attach the event listener to the "load" event
-  window.addEventListener('load', hideLoadingSpinner);
-
-  // Hide the loading spinner after a certain time (e.g., 5 seconds) even if the page hasn't fully loaded
-  setTimeout(hideLoadingSpinner, 5000); // Adjust the time in milliseconds as needed
 </script>
 
 	    
