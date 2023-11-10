@@ -346,13 +346,53 @@
 }
 
 
-.services-item:hover .services-content::after {
+/*.services-item:hover .services-content::after {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo.jpg) center center no-repeat;
     background-size: cover;
     height: 100%;
     opacity: 1;
     transition: .5s;
+}*/
+
+.services-item .services-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
+
+.services-item:hover .services-content::after {
+    opacity: 1;
+}
+
+.services-item:nth-child(1):hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo1.jpg) center center no-repeat;
+}
+
+.services-item:nth-child(2):hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/core1.jpg) center center no-repeat;
+}
+
+.services-item:nth-child(3):hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/core2.jpg) center center no-repeat;
+}
+
+.services-item:nth-child(4):hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo4.jpg) center center no-repeat;
+}
+
+.services-item:nth-child(5):hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo5.jpg) center center no-repeat;
+}
+
+.services-item:nth-child(6):hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo6.jpg) center center no-repeat;
+}
+
 
 .services-item:hover .services-content-icon {
     position: relative;
