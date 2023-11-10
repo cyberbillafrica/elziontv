@@ -392,7 +392,7 @@
 .services-item:nth-child(6):hover .services-content::after {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo6.jpg) center center no-repeat;
 }
-*/
+
 
 .services-item:hover .services-content-icon {
     position: relative;
