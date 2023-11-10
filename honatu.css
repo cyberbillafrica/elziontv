@@ -362,7 +362,7 @@
     transition: opacity 0.5s;
 }*/
 
-.services-item:hover .services-content::after {
+/*.services-item:hover .services-content::after {
     opacity: 1;
 }
 
