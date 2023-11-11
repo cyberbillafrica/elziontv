@@ -401,7 +401,7 @@ background-size: cover; height: 100%; opacity: 1; transition: .5s;
     position: relative;
     z-index: 2;
 }
-
+/*
 .services-item .services-content-icon i,
 .services-item .services-content-icon p {
     transition: .5s;
