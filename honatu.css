@@ -354,13 +354,14 @@
     transition: .5s;
 }
 
-/*.services-item .services-content::after {
-    content: "";
-    position: absolute;
+.services-item:hover .services-content::after {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/corevalues.jpg) center center no-repeat;
+    background-size: cover;
     height: 100%;
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: .5s;
 }
+
 
 .services-item:hover .services-content::after {
     opacity: 1;
@@ -401,7 +402,7 @@ background-size: cover; height: 100%; opacity: 1; transition: .5s;
     position: relative;
     z-index: 2;
 }
-/*
+
 .services-item .services-content-icon i,
 .services-item .services-content-icon p {
     transition: .5s;
