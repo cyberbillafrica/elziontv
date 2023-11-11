@@ -265,13 +265,15 @@ blockquote.pull-right {
     outline: none !important;
     padding: 18px 20px 20px 28px;
     background: var(--primary);
+    left: 20px; /* Adjust this value to shift horizontally */
+    top: 20px; /* Adjust this value to shift vertically */
 }
 
 .btn-play:before {
     content: "";
     position: absolute;
     z-index: 0;
-    left: 30%;
+    left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
