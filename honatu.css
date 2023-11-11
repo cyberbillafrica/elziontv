@@ -361,11 +361,11 @@
     opacity: 1;
     transition: .5s;
 }
-*/
+
 
 .services-item:hover .services-content::after {
     opacity: 1;
-}*/
+}
 
 .services-item:nth-child(1):hover .services-content::after {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo.jpg) center center no-repeat;
@@ -396,6 +396,38 @@ background-size: cover; height: 100%; opacity: 1; transition: .5s;
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/core5.jpg) center center no-repeat;
 background-size: cover; height: 100%; opacity: 1; transition: .5s; 
 }
+*/
+
+/* News Broadcasting */
+.services-item-news-broadcasting:hover .services-content::after {
+  background-image: url(../img/core1.jpg);
+}
+
+/* Documentaries */
+.services-item-documentaries:hover .services-content::after {
+  background-image: url(../img/core2.jpg);
+}
+
+/* Live Event Coverage */
+.services-item-live-event-coverage:hover .services-content::after {
+  background-image: url(../img/core3.jpg);
+}
+
+/* Streaming Services */
+.services-item-streaming-services:hover .services-content::after {
+  background-image: url(../img/core4.jpg);
+}
+
+/* Sales and Advertising */
+.services-item-sales-and-advertising:hover .services-content::after {
+  background-image: url(../img/core5.jpg);
+}
+
+/* Global Perspective */
+.services-item-global-perspective:hover .services-content::after {
+  background-image: url(../img/core6.jpg);
+}
+
 
 
 .services-item:hover .services-content-icon {
