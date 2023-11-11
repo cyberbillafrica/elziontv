@@ -249,7 +249,7 @@ blockquote.pull-right {
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/CEO.jpg) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/introkid.jpg) left center no-repeat;
     background-size: cover;
     height: 100%;
 }
