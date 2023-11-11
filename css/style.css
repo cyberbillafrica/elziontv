@@ -258,8 +258,8 @@ blockquote.pull-right {
     position: relative;
     display: block;
     box-sizing: content-box;
-    width: 26px;
-    height: 26px;
+    width: 36px;
+    height: 36px;
     border-radius: 100%;
     border: none;
     outline: none !important;
@@ -271,7 +271,7 @@ blockquote.pull-right {
     content: "";
     position: absolute;
     z-index: 0;
-    left: 50%;
+    left: 30%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
