@@ -400,32 +400,32 @@ background-size: cover; height: 100%; opacity: 1; transition: .5s;
 
 /* News Broadcasting */
 .services-item-news-broadcasting:hover .services-content::after {
-  background-image: url(../img/core1.jpg);
+  background-image: url(../img/breaknews.jpg);
 }
 
 /* Documentaries */
 .services-item-documentaries:hover .services-content::after {
-  background-image: url(../img/core2.jpg);
+  background-image: url(../img/documentary.jpg);
 }
 
 /* Live Event Coverage */
 .services-item-live-event-coverage:hover .services-content::after {
-  background-image: url(../img/core3.jpg);
+  background-image: url(../img/liveevents.jpg);
 }
 
 /* Streaming Services */
 .services-item-streaming-services:hover .services-content::after {
-  background-image: url(../img/core4.jpg);
+  background-image: url(../img/streaming.jpg);
 }
 
 /* Sales and Advertising */
 .services-item-sales-and-advertising:hover .services-content::after {
-  background-image: url(../img/core5.jpg);
+  background-image: url(../img/advertising.jpg);
 }
 
 /* Global Perspective */
 .services-item-global-perspective:hover .services-content::after {
-  background-image: url(../img/core6.jpg);
+  background-image: url(../img/newlogo.jpg);
 }
 
 
