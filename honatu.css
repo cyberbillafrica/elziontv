@@ -360,11 +360,11 @@
     height: 100%;
     opacity: 1;
     transition: opacity 0.5s;
-}*/
+}
 
 .services-item:hover .services-content::after {
     opacity: 1;
-}
+}*/
 
 .services-item:nth-child(1):hover .services-content::after {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo.jpg) center center no-repeat;
@@ -382,15 +382,15 @@
 }
 
 .services-item:nth-child(4):hover .services-content::after {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo4.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/core3.jpg) center center no-repeat;
 }
 
 .services-item:nth-child(5):hover .services-content::after {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo5.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/core4.jpg) center center no-repeat;
 }
 
 .services-item:nth-child(6):hover .services-content::after {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/newlogo6.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/core5.jpg) center center no-repeat;
 }
 
 
