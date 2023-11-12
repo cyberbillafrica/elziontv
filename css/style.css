@@ -251,6 +251,8 @@ blockquote.pull-right {
 .about {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/introkid.jpg) left center no-repeat;
     background-size: auto;
+	width: 50%
+	height: 50%
     
 }
 
