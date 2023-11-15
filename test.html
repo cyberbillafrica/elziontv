@@ -265,7 +265,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-        }
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+	}
 
         .image-item {
             width: calc(50% - 10px); /* Adjust as needed to leave space between images */
