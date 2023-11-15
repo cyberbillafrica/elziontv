@@ -247,11 +247,10 @@
 	
 <!-- About Us End -->
 
-   <title>Responsive Image Grid</title>
-    <style>
+     <style>
         .container {
             width: 90%;
-            margin: 0 5%;
+            margin: 0 auto; /* Center the container */
         }
 
         @media (max-width: 768px) {
@@ -265,25 +264,28 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-	}
+            margin: 0 -5px; /* Compensate for the negative margin */
+        }
 
         .image-item {
-            width: calc(50% - 10px); /* Adjust as needed to leave space between images */
+            width: calc(50% - 10px);
             margin-bottom: 20px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
 
         @media (max-width: 768px) {
             .image-item {
                 width: 100%;
+                margin: 0; /* Remove margin for smaller screens */
             }
         }
 
         .image {
             width: 100%;
             height: auto;
+            display: block; /* Remove extra space below inline-block elements */
         }
-    </style>
+    
 
     <div class="container">
         <div class="image-grid">
