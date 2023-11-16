@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     --line-offset: calc((10vh + 8px) / 2);
 }
-.container {
+.container1 {
     width: 100vw;
     height: 100vh;
     display: grid;
