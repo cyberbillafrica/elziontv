@@ -919,8 +919,12 @@ s0.parentNode.insertBefore(s1,s0);
                     <h4 class="text-white mb-4">Newsletter</h4>
                     <p>Sign up to get Global updates from us</p>
                     <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2" style="color: white; background-color: #FF0000;">SignUp</button>
+                       <form class="subscribe-form" action="/your-submit-endpoint" method="post">
+        <input type="email" class="subscribe-input" placeholder="Your Email Address" required>
+        <button type="submit" class="subscribe-button">Subscribe</button>
+		       </form>
+ <!--<input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2" style="color: white; background-color: #FF0000;">SignUp</button>-->
 		    </div>
                 </div>
             </div>
