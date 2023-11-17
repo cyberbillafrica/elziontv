@@ -796,3 +796,33 @@ article img,
             margin-top: 10px;
             margin-bottom: 10px;
 		}
+
+/* styles.css */
+
+.subscribe-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc; /* Standard border color */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+.subscribe-input {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none; /* Remove the border on the input */
+    border-radius: 5px 0 0 5px; /* Optional: Set border-radius for rounded corners */
+}
+
+.subscribe-button {
+    background-color: #ff0000; /* Red background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0; /* Optional: Set border-radius for rounded corners on the button */
+}
