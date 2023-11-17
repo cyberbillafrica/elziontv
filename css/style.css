@@ -250,9 +250,15 @@ blockquote.pull-right {
 /*** About ***/
 .about {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/introkid.jpg) left center no-repeat;
-    background-size: contain;
-    
+    background-size: cover;
 }
+
+@media (max-width: 768px) {
+    .about {
+        background-size: contain;
+    }
+}
+
 
 .btn-play {
     position: relative;
