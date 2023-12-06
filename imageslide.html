@@ -1,89 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Image Slider</title>
-  <style>
-    .container {
-      display: flex;
-      flex-direction: row;
-      overflow-x: auto;
-    }
-
-    .image-container {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-    }
-
-    .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .button {
-      padding: 10px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-    }
-  </style>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+<style>
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 0 -10px;
+}
+
+.slide {
+  flex: 0 0 calc(50% - 20px);
+  margin: 0 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .slide {
+    flex: 0 0 100%;
+  }
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+</style>
 <body>
-  <div class="container">
-    <div class="image-container"><img src="img/gallery-1.jpg" alt="Image 1"></div>
-            <div class="image-container"><img src="img/gallery-2.jpg" alt="Image 2"></div>
-            <div class="image-container"><img src="img/gallery-3.jpg" alt="Image 3"></div>
-            <div class="image-container"><img src="img/gallery-4.jpg" alt="Image 4"></div>
-            <div class="image-container"><img src="img/gallery-5.jpg" alt="Image 5"></div>
-            <div class="image-container"><img src="img/gallery-6.jpg" alt="Image 6"></div>
-            <div class="image-container"><img src="img/gallery-7.jpg" alt="Image 7"></div>
-            <div class="image-container"><img src="img/gallery-8.jpg" alt="Image 8"></div>
-           <div class="image-container">
-      <img src="image9.jpg" alt="Image 9">
-    </div>
-    <div class="image-container">
-      <img src="image10.jpg" alt="Image 10">
-    </div>
-    <div class="image-container">
-      <img src="image11.jpg" alt="Image 11">
-    </div>
-    <div class="image-container">
-      <img src="image12.jpg" alt="Image 12">
-    </div>
+ <div class="slider">
+  <div class="slide">
+    <img src="img/gallery-1" alt="Image 1">
+    <div class="title">Title 1</div>
   </div>
+  <div class="slide">
+    <img src="img/gallery-2" alt="Image 2">
+    <div class="title">Title 2</div>
+  </div>
+  <div class="slide">
+    <img src="img/gallery-3" alt="Image 3">
+    <div class="title">Title 3</div>
+  </div>
+  <div class="slide">
+    <img src="img/gallery-4" alt="Image 4">
+    <div class="title">Title 4</div>
+  </div>
+  <div class="slide">
+    <img src="img/gallery-5" alt="Image 5">
+    <div class="title">Title 5</div>
+  </div>
+  <div class="slide">
+    <img src="img/gallery-6" alt="Image 6">
+    <div class="title">Title 6</div>
+  </div>
+  <div class="slide">
+    <img src="img/gallery-7" alt="Image 7">
+    <div class="title">Title 7</div>
+  </div>
+  <div class="slide">
+    <img src="img/gallery-8" alt="Image 8">
+    <div class="title">Title 8</div>
+  </div>
+</div>
 
-  <button class="button" onclick="previousImage()">Previous</button>
-  <button class="button" onclick="nextImage()">Next</button>
+<script>
+var slideIndex = 0;
+showSlides();
 
-  <script>
-    let currentImageIndex = 0;
-
-    function previousImage() {
-      if (currentImageIndex > 0) {
-        currentImageIndex--;
-      }
-      updateImage();
-    }
-
-    function nextImage() {
-      if (currentImageIndex < 11) {
-        currentImageIndex++;
-      }
-      updateImage();
-    }
-
-    function updateImage() {
-      let imageContainers = document.getElementsByClassName('image-container');
-      for (let i = 0; i < imageContainers.length; i++) {
-        if (i === currentImageIndex) {
-          imageContainers[i].style.display = 'block';
-        } else {
-          imageContainers[i].style.display = 'none';
-        }
-      }
-    }
-  </script>
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
 </body>
-</html>
+
+    </html>
