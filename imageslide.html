@@ -5,45 +5,14 @@
  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <style>
-body, html {
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-}
- 
- .slider {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  margin: 0 -10px;
-}
-
-.slide {
-  flex: 0 0 calc(50% - 20px);
-  margin: 0 10px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-@media (max-width: 767px) {
-  .slide {
-    flex: 0 0 100%;
-  }
-}
-
-.title {
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: bold;
-}
 
  .image-scroller {
             white-space: nowrap;
-            animation: scrollImages 30s linear infinite; /* Adjust the duration as needed */
+            animation: scrollImages 10s linear infinite; /* Adjust the duration as needed */
         }
 
         .image-scroller img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
             margin-right: 20px; /* Adjust spacing between images */
         }
@@ -58,42 +27,7 @@ body, html {
         }
 </style>
 <body>
- <div class="slider">
-  <div class="slide">
-    <img src="img/gallery-1" alt="Image 1">
-    <div class="title">Title 1</div>
-  </div>
-  <div class="slide">
-    <img src="img/gallery-2" alt="Image 2">
-    <div class="title">Title 2</div>
-  </div>
-  <div class="slide">
-    <img src="img/gallery-3" alt="Image 3">
-    <div class="title">Title 3</div>
-  </div>
-  <div class="slide">
-    <img src="img/gallery-4" alt="Image 4">
-    <div class="title">Title 4</div>
-  </div>
-  <div class="slide">
-    <img src="img/gallery-5" alt="Image 5">
-    <div class="title">Title 5</div>
-  </div>
-  <div class="slide">
-    <img src="img/gallery-6" alt="Image 6">
-    <div class="title">Title 6</div>
-  </div>
-  <div class="slide">
-    <img src="img/gallery-7" alt="Image 7">
-    <div class="title">Title 7</div>
-  </div>
-  <div class="slide">
-    <img src="img/gallery-8" alt="Image 8">
-    <div class="title">Title 8</div>
-  </div>
-</div>
-
-
+ 
  <div class="image-scroller">
         <img src="img/core1.jpg" alt="Core 1">
         <img src="img/core2.jpg" alt="Core 2">
