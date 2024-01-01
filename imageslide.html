@@ -61,7 +61,11 @@
             100% {
                 transform: translateX(-1000%); /* Adjust based on the number of images and margin */
             }
-        }
+       /* Pause animation on hover */
+        .image-scroller:hover {
+            animation-play-state: paused;
+	}
+	}
 </style>
 <body>
  
@@ -167,6 +171,18 @@
         <img src="img/core10.jpg" alt="Core 10">
  </div>
 
+<script>
+        // Pause and resume animation on touch events for mobile devices
+        var scroller = document.querySelector('.image-scroller');
+
+        scroller.addEventListener('touchstart', function() {
+            scroller.style.animationPlayState = 'paused';
+        });
+
+        scroller.addEventListener('touchend', function() {
+            scroller.style.animationPlayState = 'running';
+        });
+</script>
 </body>
 
     </html>
