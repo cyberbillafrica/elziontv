@@ -5,7 +5,13 @@
  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <style>
-.slider {
+body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+}
+ 
+ .slider {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -47,7 +53,7 @@
                 transform: translateX(100%);
             }
             100% {
-                transform: translateX(-100%);
+                transform: translateX(-200%); /* Adjust based on the number of images and margin */
             }
         }
 </style>
