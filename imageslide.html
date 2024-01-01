@@ -30,6 +30,26 @@
   font-size: 16px;
   font-weight: bold;
 }
+
+ .image-scroller {
+            white-space: nowrap;
+            animation: scrollImages 30s linear infinite; /* Adjust the duration as needed */
+        }
+
+        .image-scroller img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Adjust spacing between images */
+        }
+
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
 </style>
 <body>
  <div class="slider">
