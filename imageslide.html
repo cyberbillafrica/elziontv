@@ -8,13 +8,14 @@
 
  .image-scroller {
             white-space: nowrap;
-            animation: scrollImages 20s linear infinite; /* Adjust the duration as needed */
+            animation: scrollImages 10s linear infinite; /* Adjust the duration as needed */
         }
 
         .image-scroller img {
-            max-width: 80%;
+            max-width: 50%;
             height: auto;
             margin-right: 20px; /* Adjust spacing between images */
+            border-radius: 15px; /* Adjust the border-radius for curved edges */
         }
 
         @keyframes scrollImages {
@@ -35,24 +36,12 @@
         <img src="img/core4.jpg" alt="Core 4">
         <img src="img/core5.jpg" alt="Core 5">
         <img src="img/core6.jpg" alt="Core 6">
+        <img src="img/core7.jpg" alt="Core 7">
+        <img src="img/core8.jpg" alt="Core 8">
+        <img src="img/core9.jpg" alt="Core 9">
+        <img src="img/core10.jpg" alt="Core 10">
  </div>
- 
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
-</script>
 </body>
 
     </html>
