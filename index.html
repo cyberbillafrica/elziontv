@@ -62,7 +62,33 @@ s0.parentNode.insertBefore(s1,s0);
   justify-content: center;
   align-items: center;
 	}
-	</style>
+
+ .image-scroller {
+            white-space: nowrap;
+            animation: scrollImages 35s linear infinite; /* Adjust the duration as needed */
+        }
+
+        .image-scroller img {
+            max-width: 80%;
+            height: auto;
+            margin-right: 10px; /* Adjust spacing between images */
+            border-radius: 15px; /* Adjust the border-radius for curved edges */
+        }
+
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-1000%); /* Adjust based on the number of images and margin */
+            }
+       /* Pause animation on hover */
+        .image-scroller:hover {
+            animation-play-state: paused;
+	}
+	} 
+
+</style>
 </head>
 <body>
 
@@ -228,6 +254,19 @@ s0.parentNode.insertBefore(s1,s0);
 <a class="btn rounded-pill py-3 px-3" href="https://el-zionglobalnetworktv.blogspot.com/?m=1" style="color: white; background-color: #FF0000; display: inline-block; margin: 0 auto;"><b>Visit our Blog for latest News</b></a>
 	</main>
 
+
+<div class="image-scroller">
+        <img src="img/core1.jpg" alt="Core 1">
+        <img src="img/core2.jpg" alt="Core 2">
+        <img src="img/core3.jpg" alt="Core 3">
+        <img src="img/core4.jpg" alt="Core 4">
+        <img src="img/core5.jpg" alt="Core 5">
+        <img src="img/core6.jpg" alt="Core 6">
+        <img src="img/core7.jpg" alt="Core 7">
+        <img src="img/core8.jpg" alt="Core 8">
+        <img src="img/core9.jpg" alt="Core 9">
+        <img src="img/core10.jpg" alt="Core 10">
+</div>
                         
 <!-- Page Video End --
 		
